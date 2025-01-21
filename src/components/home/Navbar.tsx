@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Menu, X, Car } from "lucide-react";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => setIsOpen(!isOpen);
+  const navigate = useNavigate();
 
   return (
     <nav className="bg-white shadow-sm">
@@ -30,10 +31,13 @@ const Navbar = () => {
             <a href="#" className="text-gray-600 hover:text-blue-600">
               Safety
             </a>
-            <a href="#" className="text-gray-600 hover:text-blue-600">
+            <Link to="/login" className="text-gray-600 hover:text-blue-600">
               Login
-            </a>
-            <button className="bg-blue-600 text-white px-4 py-2 rounded-md">
+            </Link>
+            <button
+              className="bg-blue-600 text-white px-4 py-2 rounded-md"
+              onClick={() => navigate("/register")}
+            >
               Get Started
             </button>
           </div>

@@ -1,58 +1,5 @@
-// const Header = () => {
-//   return (
-//     <section className="relative bg-blue-500 text-white py-16 px-4 md:px-12 text-center overflow-hidden">
-//       {/* Background Image with Gradient Overlay */}
-//       <div
-//         className="absolute inset-0 bg-cover bg-center"
-//         style={{
-//           backgroundImage:
-//             "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/1200x800.png?text=RideMate+Placeholder+Image')",
-//         }}
-//       />
-
-//       {/* Content */}
-//       <div className="relative z-10">
-//         {/* Brand Name */}
-//         <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4 drop-shadow-lg">
-//           RideMate
-//         </h1>
-
-//         {/* Headline */}
-//         <h2 className="text-2xl sm:text-3xl font-semibold mb-4 drop-shadow-md">
-//           Need a Driver? We’ve Got You Covered!
-//         </h2>
-
-//         {/* Subtext */}
-//         <p className="text-lg sm:text-xl mb-6">
-//           Book professional drivers for your vehicle anytime, anywhere.
-//         </p>
-
-//         {/* Call to Action Buttons */}
-//         <div className="flex justify-center gap-4">
-//           <a
-//             href="#find-driver"
-//             className="flex items-center gap-2 bg-green-500 text-white text-lg py-3 px-8 rounded-full hover:bg-green-600 transition-transform transform hover:scale-105 shadow-lg"
-//           >
-//             <span>🚗</span> Find a Driver
-//           </a>
-//           <a
-//             href="#become-driver"
-//             className="flex items-center gap-2 bg-gray-500 text-white text-lg py-3 px-8 rounded-full hover:bg-gray-600 transition-transform transform hover:scale-105 shadow-lg"
-//           >
-//             <span>🛠️</span> Become a Driver
-//           </a>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Header;
-
-
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Car, UserPlus, ChevronDown } from 'lucide-react';
+import { Car, UserPlus } from 'lucide-react';
 
 const Header = () => {
   return (
